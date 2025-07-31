@@ -35,13 +35,18 @@ function App() {
     });
   };
 
+  const addEvent = (event) => {
+    setEvents((prevEvents) => [...prevEvents, event]);
+    handleClose();
+  };
+
   const subtitle = "All the latest events in Lebanon";
   return (
     <div className="App">
       {/* MODAL */}
       {showModal && (
         <Modal handleClose={handleClose} isSalesModal={true}>
-          <NewEventForm />
+          <NewEventForm addEvent={addEvent} />
         </Modal>
       )}
 
