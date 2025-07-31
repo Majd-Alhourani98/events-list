@@ -1,0 +1,11 @@
+/* ./components/NewEventForm.css */
+.new-event-form label,
+.new-event-form input {
+  display: block; /* Make labels and inputs take full width */
+  text-align: left;
+  width: 100%; /* Ensure they span the full width of their container */
+  margin: 10px auto; /* Add vertical margin and center horizontally */
+  padding: 10px; /* Internal spacing */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  font-size: 1.2em;
+}

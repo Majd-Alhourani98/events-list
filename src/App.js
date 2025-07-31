@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Title from "./components/Title";
 import Modal from "./components/Modal";
 import EventtList from "./components/EventtList";
+import NewEventForm from "./components/NewEventForm";
 
 // Styles
 import "./App.css";
@@ -40,9 +41,7 @@ function App() {
       {/* MODAL */}
       {showModal && (
         <Modal handleClose={handleClose} isSalesModal={true}>
-          <h2>Terms and conditions</h2>
-          <p>Please read our full terms and conditions before proceeding</p>
-          <a href="/terms">Read More</a>
+          <NewEventForm />
         </Modal>
       )}
 
@@ -66,7 +65,7 @@ function App() {
       {showEvents && <EventtList events={events} handleClick={handleClick} />}
 
       {/* Modal button */}
-      <button onClick={handleOpen}>Open Modal</button>
+      <button onClick={handleOpen}>Add New Event</button>
     </div>
   );
 }
