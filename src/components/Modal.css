@@ -18,3 +18,13 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1001; /* Above the backdrop */
 }
+
+.modal .sales-btn {
+  border: 4px solid #333;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card button {
+  background-color: #555;
+}

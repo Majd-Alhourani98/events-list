@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       {/* MODAL */}
       {showModal && (
-        <Modal handleClose={handleClose}>
+        <Modal handleClose={handleClose} isSalesModal={true}>
           <h2>Terms and conditions</h2>
           <p>Please read our full terms and conditions before proceeding</p>
           <a href="/terms">Read More</a>
