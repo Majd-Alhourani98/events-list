@@ -23,9 +23,10 @@ function App() {
     });
   };
 
+  const subtitle = "All the latest events in Lebanon";
   return (
     <div className="App">
-      <Title />
+      <Title title="Majd Alhourani events" subtitle={subtitle} />
       <div>
         {showEvents && (
           <button onClick={() => setShowEvents(false)}>Hide Events</button>
