@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 // Components
 import Title from "./components/Title";
@@ -41,10 +41,10 @@ function App() {
 
       {showEvents &&
         events.map((event) => (
-          <div key={event.id}>
+          <React.Fragment key={event.id}>
             <h2>{event.title}</h2>
             <button onClick={() => handleClick(event.id)}>Delete Event</button>
-          </div>
+          </React.Fragment>
         ))}
     </div>
   );
