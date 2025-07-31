@@ -1,11 +1,36 @@
-/* ./components/NewEventForm.css */
-.new-event-form label,
-.new-event-form input {
-  display: block; /* Make labels and inputs take full width */
+.new-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.new-event-form label {
   text-align: left;
-  width: 100%; /* Ensure they span the full width of their container */
-  margin: 10px auto; /* Add vertical margin and center horizontally */
-  padding: 10px; /* Internal spacing */
-  box-sizing: border-box; /* Include padding and border in element's total width/height */
-  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.new-event-form input,
+.new-event-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.new-event-form button {
+  align-self: flex-end;
+}
+
+.new-event-form p {
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: right;
 }
